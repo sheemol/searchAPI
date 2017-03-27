@@ -1,6 +1,5 @@
 package test;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 
 import javax.ws.rs.Produces;
@@ -24,7 +23,7 @@ public class SearchAPITest {
 
 	// search with term itunes
 
-	 @Test
+	@Test
 	@Produces("application/json")
 	public void testSearchbyTerm() throws JsonParseException,
 			JsonMappingException, IOException {
@@ -87,7 +86,7 @@ public class SearchAPITest {
 	}
 
 	// search with valid term with valid country
-	 @Test
+	@Test
 	public void testSearchbyTermCountry() throws JsonParseException,
 			JsonMappingException, IOException {
 

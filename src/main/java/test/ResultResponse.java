@@ -34,9 +34,56 @@ public class ResultResponse {
 	public void setErrorMessage(String errorMessage) {
 		this.errorMessage = errorMessage;
 	}
-	
 
 	static class Result {
+
+		private Double trackPrice;
+		private Date releaseDate;
+		private Integer discCount;
+		private Integer discNumber;
+		private Integer trackCount;
+		private Integer trackNumber;
+		private Long trackTimeMillis;
+		private String country;
+		private String currency;
+		private String primaryGenreName;
+		private String artistViewUrl;
+		private String trackViewUrl;
+		private String trackRentalPrice;
+		private String trackHdRentalPrice;
+		private String wrapperType;
+		private String kind;
+		private String artistId;
+		private String collectionId;
+		private String trackId;
+		private String artistName;
+		private String collectionName;
+		private String trackName;
+		private String collectionCensoredName;
+		private String trackCensoredName;
+		private String collectionViewUrl;
+		private String feedUrl;
+		private String artworkUrl30;
+		private String artworkUrl60;
+		private String artworkUrl100;
+		private Double collectionPrice;
+		private double collectionHdPrice;
+		private String trackHdPrice;
+		private String trackExplicitness;
+		private String contentAdvisoryRating;
+		private String artworkUrl600;
+		private List<String> genreIds;
+		private String collectionArtistId;
+		private String collectionArtistName;
+		private String collectionArtistViewUrl;
+		private String isStreamable;
+		private String shortDescription;
+		private String longDescription;
+		private String hasITunesExtras;
+		private List<String> genres;
+		private String collectionExplicitness;
+		@JsonIgnore
+		private String previewUrl;
 
 		public String getTrackId() {
 			return trackId;
@@ -278,8 +325,6 @@ public class ResultResponse {
 			this.collectionHdPrice = collectionHdPrice;
 		}
 
-		private String trackHdRentalPrice;
-
 		public String getTrackHdRentalPrice() {
 			return trackHdRentalPrice;
 		}
@@ -360,8 +405,6 @@ public class ResultResponse {
 			this.genres = genres;
 		}
 
-		private List<String> genres;
-
 		public String getArtworkUrl600() {
 			return artworkUrl600;
 		}
@@ -385,8 +428,6 @@ public class ResultResponse {
 		public void setTrackExplicitness(String trackExplicitness) {
 			this.trackExplicitness = trackExplicitness;
 		}
-
-		private String collectionExplicitness;
 
 		public String getCollectionExplicitness() {
 			return collectionExplicitness;
@@ -412,65 +453,6 @@ public class ResultResponse {
 			this.trackRentalPrice = trackRentalPrice;
 		}
 
-		private Double trackPrice;
-		private Date releaseDate;
-		private Integer discCount;
-		private Integer discNumber;
-		private Integer trackCount;
-		private Integer trackNumber;
-		private Long trackTimeMillis;
-		private String country;
-		private String currency;
-		private String primaryGenreName;
-		private String artistViewUrl;
-		private String trackViewUrl;
-		private String trackRentalPrice;
-
-		private String wrapperType;
-		private String kind;
-		private String artistId;
-		private String collectionId;
-		private String trackId;
-		private String artistName;
-		private String collectionName;
-		private String trackName;
-		private String collectionCensoredName;
-		private String trackCensoredName;
-
-		private String collectionViewUrl;
-		private String feedUrl;
-
-		private String artworkUrl30;
-
-		private String artworkUrl60;
-		private String artworkUrl100;
-		private Double collectionPrice;
-		private double collectionHdPrice;
-		private String trackHdPrice;
-
-		private String trackExplicitness;
-
-		private String contentAdvisoryRating;
-
-		private String artworkUrl600;
-
-		private List<String> genreIds;
-
-		private String collectionArtistId;
-
-		private String collectionArtistName;
-
-		private String collectionArtistViewUrl;
-		private String isStreamable;
-
-		private String shortDescription;
-
-		private String longDescription;
-
-		private String hasITunesExtras;
-
-		@JsonIgnore
-		private String previewUrl;
 	}
 
 }

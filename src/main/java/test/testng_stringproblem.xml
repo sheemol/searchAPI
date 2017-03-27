@@ -1,14 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-
-
-
 <suite name="TestNgMavenSuite">
-<test name="SearchAPITest">
-<classes>
-<class name="test.SearchAPITest"/>
-</classes>
-
-
-</test>
+	<test name="SearchAPITest">
+		<classes>
+			<class name="test.SearchAPITest" />
+		</classes>
+	</test>
 
 </suite>
