@@ -1,0 +1,18 @@
+Here are few (both positive and negative) test cases, which should cover testing of the search API endpoint:
+
+1. Test search url with a valid query param. validate the response
+2. Test the search url with no queryparam. Validate the response
+3.  Test  the search  url with query param key as valid value and value as empty. Validate the response
+4. Test the search url with invalid term param. Validate the response
+5. Test the search url with valid term param and invalid country param. Validate the response
+6. Test the search url with multiple query arguments(A list of values passed in th query param).Validate theresponse
+7. Test the search url with limit parameter. Validate the response
+8. Test the search url with invalid limit parameter. Validate the response
+9. Test the search url with invalid key query param
+10.Test the search url with empty key and valid value query param
+
+
+  
+
+
+
